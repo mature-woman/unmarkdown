@@ -1,0 +1,36 @@
+{
+	"name": "mirzaev/unmarkdown",
+	"description": "Library for escaping all markdown symbols",
+	"homepage": "https://git.svoboda.works/mirzaev/unmarkdown",
+	"type": "library",
+	"keywords": [
+		"markdown",
+		"escaping"
+	],
+	"readme": "README.md",
+	"license": "WTFPL",
+	"authors": [
+		{
+			"name": "Arsen Mirzaev Tatyano-Muradovich",
+			"email": "arsen@mirzaev.sexy",
+			"homepage": "https://mirzaev.sexy",
+			"role": "Creator"
+		}
+	],
+	"support": {
+		"issues": "https://git.svoboda.works/mirzaev/unmarkdown/issues"
+	},
+	"require": {
+		"php": "^8.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"mirzaev\\unmarkdown\\": "mirzaev/unmarkdown/system"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"mirzaev\\unmarkdown\\tests\\": "mirzaev/unmarkdown/tests"
+		}
+	}
+}
