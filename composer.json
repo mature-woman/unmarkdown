@@ -3,10 +3,7 @@
 	"description": "Library for escaping all markdown symbols",
 	"homepage": "https://git.svoboda.works/mirzaev/unmarkdown",
 	"type": "library",
-	"keywords": [
-		"markdown",
-		"escaping"
-	],
+	"keywords": ["markdown", "escaping"],
 	"readme": "README.md",
 	"license": "WTFPL",
 	"authors": [
@@ -24,13 +21,6 @@
 		"php": "^8.4"
 	},
 	"autoload": {
-		"psr-4": {
-			"mirzaev\\unmarkdown\\": "mirzaev/unmarkdown/system"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"mirzaev\\unmarkdown\\tests\\": "mirzaev/unmarkdown/tests"
-		}
+		"files": ["mirzaev/unmarkdown/system/unmarkdown.php"]
 	}
 }

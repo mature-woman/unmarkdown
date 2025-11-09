@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace mirzaev\unmarkdown;
+namespace mirzaev;
 
 /**
  * Escape all markdown symbols
