@@ -33,7 +33,7 @@ function unmarkdown(string $text, array $exceptions = []): string
 				'<',
 				'!',
 				'`',
-				'\\',
+				'\\\\',
 				'|',
 				'+'
 			],
