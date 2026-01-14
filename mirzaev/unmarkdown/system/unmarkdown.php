@@ -13,37 +13,37 @@ namespace mirzaev;
  * @return string Escaped text
  */
 function unmarkdown(string $text, array $exceptions = []): string
-	{
-		// Initializing the registry of characters for escaping
-		$from = array_diff(
-			[
-				'.',
-				'#',
-				'*',
-				'-',
-				'_',
-				'=',
-				'[',
-				']',
-				'{',
-				'}',
-				'(',
-				')',
-				'>',
-				'<',
-				'!',
-				'`',
-				'\\\\',
-				'|',
-				'+'
-			],
-			$exceptions
-		);
+{
+	// Initializing the registry of characters for escaping
+	$from = array_diff(
+		[
+			'.',
+			'#',
+			'*',
+			'-',
+			'_',
+			'=',
+			'[',
+			']',
+			'{',
+			'}',
+			'(',
+			')',
+			'>',
+			'<',
+			'!',
+			'`',
+			'\\\\',
+			'|',
+			'+'
+		],
+		$exceptions
+	);
 
-		// Initializing the registry of escaped characters
-		$to = [];
-		foreach ($from as $symbol) $to[] = "\\$symbol";
+	// Initializing the registry of escaped characters
+	$to = [];
+	foreach ($from as $symbol) $to[] = "\\$symbol";
 
-		// Escaping the text and exit (success)
-		return str_replace($from, $to,	$text);
-	}
+	// Escaping the text and exit (success)
+	return str_replace($from, $to,	$text);
+}
